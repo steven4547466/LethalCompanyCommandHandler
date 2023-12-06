@@ -16,4 +16,8 @@ CommandHandler.CommandHandler.RegisterCommand("command", new List<string>() { "a
 });
 ```
 
+`RegisterCommand` will return `false` if the command or any alias is already used and will **NOT** register the command for compatibility reasons.
+
+There is also an `UnregisterCommand` which you can use to unregister a command.
+
 And add it as a dependency to your mod in the manifest.
